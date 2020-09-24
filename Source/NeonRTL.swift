@@ -6,7 +6,7 @@ internal enum _Corner {
 }
 
 internal extension Corner {
-    internal func toInternal(_ view: Frameable) -> _Corner {
+    func toInternal(_ view: Frameable) -> _Corner {
         switch self {
         case .topLeft:
             return .topLeft
@@ -37,7 +37,7 @@ internal enum _Edge {
 }
 
 internal extension Edge {
-    internal func toInternal(_ view: Frameable) -> _Edge {
+    func toInternal(_ view: Frameable) -> _Edge {
         switch self {
         case .top:
             return .top
@@ -73,7 +73,7 @@ internal enum _Align {
 
 internal extension Align {
 
-    internal func toInternal(_ view: Frameable) -> _Align {
+    func toInternal(_ view: Frameable) -> _Align {
         switch self {
         case .toTheRightMatchingTop:
             return .toTheRightMatchingTop
